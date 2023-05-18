@@ -96,7 +96,6 @@ Route::group(['middleware' => 'auth'], function(){
     Route::get('/estados', 'IBGEController@listarEstados');
     Route::get('/estados/{estado_id}/cidades', 'IBGEController@listarCidades');
     Route::get('/cotacao-dolar', [HomeController::class, 'getCotacao']);
-
 });
 
 Auth::routes();
